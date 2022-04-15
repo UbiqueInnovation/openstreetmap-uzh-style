@@ -656,15 +656,6 @@
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
 
-  [feature = 'highway_services'],
-  [feature = 'highway_rest_area'] {
-    [zoom >= 10] {
-      polygon-fill: @rest_area;
-      [way_pixels >= 4]  { polygon-gamma: 0.75; }
-      [way_pixels >= 64] { polygon-gamma: 0.3;  }
-    }
-  }
-
   [feature = 'railway_station'][zoom >= 10] {
     polygon-fill: @railway;
   }
@@ -731,66 +722,6 @@
         [way_pixels >= 4]  { polygon-gamma: 0.75; }
         [way_pixels >= 64] { polygon-gamma: 0.3;  }
       }
-    }
-  }
-
-  [int_wetland != null][zoom >= 10] {
-    polygon-pattern-file: url('symbols/wetland.png');
-    polygon-pattern-alignment: global;
-  }
-  [natural = 'reef'][zoom >= 10] {
-    polygon-pattern-file: url('symbols/reef.png');
-    polygon-pattern-alignment: global;
-  }
-  [zoom >= 13] {
-    [int_wetland = 'marsh'],
-    [int_wetland = 'saltmarsh'],
-    [int_wetland = 'wet_meadow'] {
-      polygon-pattern-file: url('symbols/wetland_marsh.png');
-      polygon-pattern-alignment: global;
-    }
-    [int_wetland = 'reedbed'] {
-      polygon-pattern-file: url('symbols/wetland_reed.png');
-      polygon-pattern-alignment: global;
-    }
-    [int_wetland = 'mangrove'] {
-      polygon-pattern-file: url('symbols/wetland_mangrove.png');
-      polygon-pattern-alignment: global;
-    }
-    [int_wetland = 'swamp'] {
-      polygon-pattern-file: url('symbols/wetland_swamp.png');
-      polygon-pattern-alignment: global;
-    }
-    [int_wetland = 'bog'],
-    [int_wetland = 'fen'],
-    [int_wetland = 'string_bog'] {
-      polygon-pattern-file: url('symbols/wetland_bog.png');
-      polygon-pattern-alignment: global;
-    }
-    [landuse = 'salt_pond'] {
-      polygon-pattern-file: url('symbols/salt_pond.png');
-      polygon-pattern-alignment: global;
-    }
-    [natural = 'beach'],
-    [natural = 'shoal'] {
-      [surface = 'sand'] {
-        polygon-pattern-file: url('symbols/beach.png');
-        polygon-pattern-alignment: global;
-      }
-      [surface = 'gravel'],
-      [surface = 'fine_gravel'],
-      [surface = 'pebbles'],
-      [surface = 'pebblestone'],
-      [surface = 'shingle'],
-      [surface = 'stones'],
-      [surface = 'shells'] {
-        polygon-pattern-file: url('symbols/beach_coarse.png');
-        polygon-pattern-alignment: global;
-      }
-    }
-    [natural = 'scrub'] {
-      polygon-pattern-file: url('symbols/scrub.png');
-      polygon-pattern-alignment: global;
     }
   }
 

@@ -5,18 +5,6 @@
 @waterway-text-repeat-distance: 200;
 
 #water-areas {
-  [natural = 'glacier']::natural {
-    [zoom >= 5] {
-      line-width: 1.0;
-      line-color: @glacier-line;
-      polygon-fill: @glacier;
-      [zoom >= 10] {
-        line-dasharray: 4,2;
-        line-width: 1.5;
-      }
-    }
-  }
-
   [waterway = 'dock'],
   [landuse = 'basin'],
   [natural = 'water'],
