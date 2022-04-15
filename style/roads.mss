@@ -24,13 +24,13 @@
 @access-marking: #ffffff;
 @access-marking-living-street: #ffffff;
 
-@default-casing: white;
-@tertiary-casing: #ffffff;
-@residential-casing: #ffffff;
+@default-casing: #e1e1e1;
+@tertiary-casing: #e1e1e1;
+@residential-casing: #e1e1e1;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: #ffffff;
+@pedestrian-casing: #e1e1e1;
 @path-casing: @default-casing;
 @footway-casing: @default-casing;
 @steps-casing: @default-casing;
@@ -50,7 +50,7 @@
 @private-marking-for-red: #ffffff;
 
 @tunnel-casing: grey;
-@bridge-casing: black;
+@bridge-casing: #e1e1e1;
 
 @motorway-tunnel-fill: lighten(@motorway-fill, 10%);
 @trunk-tunnel-fill: lighten(@trunk-fill, 10%);
@@ -2977,107 +2977,6 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 15] { line-width: 6; }
         [zoom >= 16] { line-width: 8; }
       }
-    }
-  }
-}
-
-#roads-text-ref {
-  [highway = 'motorway'],
-  [highway = 'trunk'],
-  [highway = 'primary'],
-  [highway = 'secondary'],
-  [highway = 'tertiary'] {
-    [zoom >= 13] {
-      shield-name: "[refs]";
-      shield-size: @shield-size;
-      shield-line-spacing: @shield-line-spacing;
-
-      [zoom >= 16] {
-        shield-size: @shield-size-z16;
-        shield-line-spacing: @shield-line-spacing-z16;
-      }
-      [zoom >= 18] {
-        shield-size: @shield-size-z18;
-        shield-line-spacing: @shield-line-spacing-z18;
-      }
-
-      shield-placement: line;
-      shield-spacing: @shield-spacing;
-      shield-repeat-distance: @shield-repeat-distance;
-      shield-margin: @shield-margin;
-      shield-face-name: @shield-font;
-      shield-clip: @shield-clip;
-
-      [highway = 'motorway'] {
-        shield-fill: @motorway-shield;
-        shield-file: url("symbols/shields/motorway_[width]x[height].svg");
-
-        [zoom >= 16] {
-          shield-file: url("symbols/shields/motorway_[width]x[height]_z16.svg");
-        }
-        [zoom >= 18] {
-          shield-file: url("symbols/shields/motorway_[width]x[height]_z18.svg");
-        }
-      }
-      [highway = 'trunk'] {
-        shield-fill: @trunk-shield;
-        shield-file: url("symbols/shields/trunk_[width]x[height].svg");
-
-        [zoom >= 16] {
-          shield-file: url("symbols/shields/trunk_[width]x[height]_z16.svg");
-        }
-        [zoom >= 18] {
-          shield-file: url("symbols/shields/trunk_[width]x[height]_z18.svg");
-        }
-      }
-      [highway = 'primary'] {
-        shield-fill: @primary-shield;
-        shield-file: url("symbols/shields/primary_[width]x[height].svg");
-
-        [zoom >= 16] {
-          shield-file: url("symbols/shields/primary_[width]x[height]_z16.svg");
-        }
-        [zoom >= 18] {
-          shield-file: url("symbols/shields/primary_[width]x[height]_z18.svg");
-        }
-      }
-      [highway = 'secondary'] {
-        shield-fill: @secondary-shield;
-        shield-file: url("symbols/shields/secondary_[width]x[height].svg");
-
-        [zoom >= 16] {
-          shield-file: url("symbols/shields/secondary_[width]x[height]_z16.svg");
-        }
-        [zoom >= 18] {
-          shield-file: url("symbols/shields/secondary_[width]x[height]_z18.svg");
-        }
-      }
-      [highway = 'tertiary'] {
-        shield-fill: @tertiary-shield;
-        shield-file: url("symbols/shields/tertiary_[width]x[height].svg");
-
-        [zoom >= 16] {
-          shield-file: url("symbols/shields/tertiary_[width]x[height]_z16.svg");
-        }
-        [zoom >= 18] {
-          shield-file: url("symbols/shields/tertiary_[width]x[height]_z18.svg");
-        }
-      }
-    }
-  }
-  [highway = 'runway'],
-  [highway = 'taxiway'] {
-    [zoom >= 15] {
-      text-name: "[refs]";
-      text-size: 10;
-      text-fill: #333;
-      text-spacing: 750;
-      text-clip: false;
-      text-placement: line;
-      text-face-name: @oblique-fonts;
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
-      text-repeat-distance: @minor-highway-text-repeat-distance;
     }
   }
 }
