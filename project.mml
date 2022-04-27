@@ -1,4 +1,4 @@
-scale: 1
+scale: 2
 metatile: 2
 name: OpenStreetMap Carto
 description: A general-purpose OpenStreetMap mapnik style, in CartoCSS
