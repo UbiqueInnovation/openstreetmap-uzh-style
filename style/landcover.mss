@@ -51,7 +51,7 @@
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
 @sand: #f6f6f4;
-@societal_amenities: #f6f6f4;   // Lch(99,13,109)
+@societal_amenities: #ffffff;   // Lch(99,13,109)
 @tourism: #f6f6f4;
 @quarry: #f6f6f4;
 @military: #f6f6f4;
