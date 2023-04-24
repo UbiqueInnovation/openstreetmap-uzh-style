@@ -1,5 +1,5 @@
-@station-color: #0028a5;
-@station-text: #0028a5;
+@station-color: #000000;
+@station-text: #000000;
 
 #stations {
   [railway = 'subway_entrance'][zoom >= 18] {

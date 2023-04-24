@@ -1,10 +1,10 @@
 // --- Parks, woods, other green things ---
 
-@grass: #D6EEEB;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: #D6EEEB;        // Lch(84,24,122)
-@forest: #D6EEEB;       // Lch(80,30,135)
-@forest-text: #D6EEEB;  // Lch(40,30,135)
-@park: #D6EEEB;         // Lch(94,30,145)
+@grass: #f6f6f4;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
+@scrub: #f6f6f4;        // Lch(84,24,122)
+@forest: #f1f1ef;       // Lch(80,30,135)
+@forest-text: #aaaaa8;  // Lch(40,30,135)
+@park: #f1f1ef;         // Lch(94,30,145)
 @allotments: #f6f6f4;   // Lch(87,20,135)
 @orchard: #f6f6f4; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
@@ -21,10 +21,10 @@
 @commercial-line: #ffffff;  // Lch(75,12,25)
 @industrial: #ffffff;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
 @industrial-line: #ffffff;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
-@farmland: #D6EEEB;         // Lch(94,14,112)
-@farmland-line: #D6EEEB;    // Lch(80,14,112)
-@farmyard: #D6EEEB;         // Lch(89,20,80)
-@farmyard-line: #D6EEEB;    // Lch(75,25,80)
+@farmland: #f6f6f4;         // Lch(94,14,112)
+@farmland-line: #f6f6f4;    // Lch(80,14,112)
+@farmyard: #f6f6f4;         // Lch(89,20,80)
+@farmyard-line: #f6f6f4;    // Lch(75,25,80)
 
 // --- Transport ----
 
@@ -63,7 +63,7 @@
 
 // --- Sports ---
 
-@pitch: #D6EEEB;           // Lch(85,22,168) also track
+@pitch: #f6f6f4;           // Lch(85,22,168) also track
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
 @golf_course: @campsite;
